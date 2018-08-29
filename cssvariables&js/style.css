@@ -1,0 +1,42 @@
+@font-face {
+  font-family: IBMPlex;
+  src: url(./fonts/IBMPlexSansCondensed-Thin.ttf);
+}
+
+body {
+  text-align: center;
+  background: #355c7d;
+  color: white;
+  font-family: IBMPlex;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width:100px;
+  background: transparent;
+}
+
+
+/* setting default values for variables */
+:root {
+  --base: #f8b195;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  width: 48%;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.hl {
+  color: var(--base);
+}
